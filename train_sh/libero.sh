@@ -2,7 +2,7 @@
 sleep 1
 PROJECT_DIR="/home/user/hyn/openpi"
 CONFIG="pi05_libero"
-EXP_NAME="libero_pi05_0115"
+EXP_NAME="libero_pi05_0116"
 echo ">>> 正在进入项目目录: $PROJECT_DIR"
 cd "$PROJECT_DIR"
 echo "HYN Training script for OpenPI Pi05"
@@ -10,6 +10,6 @@ echo "Config: $CONFIG"
 echo "Experiment name: $EXP_NAME"
 export WANDB_API_KEY=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
 export HF_ENDPOINT=https://hf-mirror.com
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 uv run scripts/compute_norm_stats.py --config-name $CONFIG
 XLA_PYTHON_CLIENT_MEM_FRACTION=0.95 uv run scripts/train.py $CONFIG --exp-name=$EXP_NAME --overwrite

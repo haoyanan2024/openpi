@@ -69,3 +69,8 @@ checkpoint was trained in openpi with the `pi05_libero` config.
 | Model | Libero Spatial | Libero Object | Libero Goal | Libero 10 | Average |
 |-------|---------------|---------------|-------------|-----------|---------|
 | π0.5 @ 30k (finetuned) | 98.8 | 98.2 | 98.0 | 92.4 | 96.85
+
+# 测试结果
+| Model | Libero Spatial | Libero Object | Libero Goal | Libero 10 | Average |
+|-------|---------------|---------------|-------------|-----------|---------|
+| π0.5 @ 30k (finetuned) | 98.8 | - | 98.4 | 91.8 |
